@@ -174,7 +174,7 @@ function setFocus(e) {
 }
 
 async function getQuote() {  
-  const url = 'https://quote-garden.herokuapp.com/api/v2/quotes/random';
+  const url = 'https://quote-garden.herokuapp.com/api/v3/quotes/random';
   const res = await fetch(url);
   const data = await res.json(); 
   blockquote.textContent = data.quote.quoteText;
