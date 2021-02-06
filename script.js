@@ -177,8 +177,8 @@ async function getQuote() {
   const url = 'https://quote-garden.herokuapp.com/api/v3/quotes/random';
   const res = await fetch(url);
   const data = await res.json(); 
-  blockquote.textContent = data[0].quoteText;
-  figcaption.textContent = data[0].quoteAuthor;
+  //blockquote.textContent = data[0].quoteText;
+  //figcaption.textContent = data[0].quoteAuthor;
  console.log(data[0]);
 }
 
