@@ -179,6 +179,7 @@ async function getQuote() {
   const data = await res.json(); 
   blockquote.textContent = data.quoteText;
   figcaption.textContent = data.quoteAuthor;
+ console.log(data);
 }
 
 function getCity() {
